@@ -231,7 +231,7 @@ export class RoleBasedUserController extends UserBaseController
             USER_MANAGEMENT_ACC_ROLES
         ]);
 
-        const testUser = (await UserBaseManager.GetUserId(2) || UserBaseManager.NewUser()) as RoleBasedUser;
+        const testUser = (await UserBaseManager.GetUserId(1) || UserBaseManager.NewUser()) as RoleBasedUser;
         testUser.SetUsername("test");
         testUser.SetPassword("test");
         testUser.SetEmail("test@email.com");
